@@ -1,0 +1,156 @@
+:root {
+  --primary: #1e88e5;
+  --primary-dark: #1565c0;
+  --accent: #7cb342;
+  --bg-light: #f8f9fa;
+  --text-main: #202124;
+  --text-muted: #5f6368;
+  --border: #dadce0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-light);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-container img {
+  height: 48px;
+  width: auto;
+}
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+nav a:hover, nav a.active {
+  color: var(--primary);
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+h1 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  border-bottom: 2px solid var(--bg-light);
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: var(--text-main);
+  margin-top: 28px;
+  font-size: 1.25rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+button {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+#formStatus {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  display: none;
+  font-size: 0.9rem;
+}
+
+.status-success {
+  background-color: #e6f4ea;
+  color: #137333;
+  border: 1px solid #ceead6;
+}
+
+.status-error {
+  background-color: #fce8e6;
+  color: #c5221f;
+  border: 1px solid #fad2cf;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 16px;
+  background: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
